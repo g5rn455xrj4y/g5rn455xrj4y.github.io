@@ -1,0 +1,1290 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>日本写真 - 品牌影像_官方视频门户 | 记录真实与光的写真文化</title>
+<meta name="description" content="日本写真官方网站，专注写真影像内容生态与原创精品视频，汇聚创作者、品牌故事与在地文化记录。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a2a3a'/%3E%3Ccircle cx='32' cy='30' r='13' fill='none' stroke='%23e8b04b' stroke-width='3'/%3E%3Ccircle cx='32' cy='30' r='5' fill='%23e8b04b'/%3E%3Crect x='14' y='45' width='36' height='4' rx='2' fill='%23e8b04b'/%3E%3C/svg%3E">
+<style>
+:root{
+  --jp-ink:#182430;
+  --jp-ink-2:#243647;
+  --jp-paper:#f4f1ea;
+  --jp-paper-2:#eae5da;
+  --jp-amber:#d99a2b;
+  --jp-amber-2:#b87a14;
+  --jp-coral:#c45a3c;
+  --jp-blue:#3d6b8a;
+  --jp-line:#d5cdbd;
+  --jp-muted:#6a756f;
+  --jp-white:#fffdf8;
+  --jp-shadow:0 10px 30px rgba(24,36,48,.10);
+  --jp-shadow-lg:0 18px 48px rgba(24,36,48,.16);
+  --jp-radius:16px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:"Hiragino Sans","PingFang SC","Microsoft YaHei","Noto Sans SC",system-ui,sans-serif;
+  background:var(--jp-paper);
+  color:var(--jp-ink);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+h1,h2,h3,h4{margin:0;line-height:1.3;font-weight:700;letter-spacing:.01em}
+p{margin:0}
+ul{margin:0;padding:0;list-style:none}
+:focus-visible{outline:2px solid var(--jp-amber);outline-offset:3px}
+.jp-wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+.jp-sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+/* ---------- 吸顶 ---------- */
+.jp-sticky{position:sticky;top:0;z-index:60}
+.jp-notice{
+  background:linear-gradient(90deg,var(--jp-ink),var(--jp-ink-2));
+  color:#f3ecd9;
+  font-size:13px;
+  letter-spacing:.02em;
+}
+.jp-notice__inner{display:flex;align-items:center;gap:12px;padding:9px 0;flex-wrap:wrap}
+.jp-notice__tag{
+  flex:0 0 auto;background:var(--jp-amber);color:#241a06;
+  font-weight:700;font-size:11px;padding:2px 9px;border-radius:999px;letter-spacing:.14em;
+}
+.jp-notice__text{flex:1 1 240px;min-width:0}
+.jp-notice__text b{color:#ffd98a;font-weight:600}
+.jp-notice__link{flex:0 0 auto;font-size:12px;border-bottom:1px dashed rgba(243,236,217,.55);padding-bottom:1px;color:#ffe9bd}
+/* ---------- 页头 ---------- */
+.jp-head{background:rgba(244,241,234,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--jp-line)}
+.jp-head__inner{display:flex;align-items:center;gap:18px;padding:12px 0}
+.jp-brand{display:flex;align-items:center;gap:11px;flex:0 0 auto}
+.jp-brand__mark{width:40px;height:40px;border-radius:12px;background:var(--jp-ink);display:grid;place-items:center;box-shadow:inset 0 0 0 2px rgba(255,255,255,.08)}
+.jp-brand__name{display:flex;flex-direction:column;line-height:1.15}
+.jp-brand__name strong{font-size:17px;letter-spacing:.05em}
+.jp-brand__name span{font-size:10.5px;color:var(--jp-muted);letter-spacing:.18em;text-transform:uppercase}
+.jp-nav{margin-left:auto;display:flex;align-items:center;gap:4px}
+.jp-nav__link{padding:7px 12px;border-radius:9px;font-size:14px;color:var(--jp-ink-2);transition:.2s}
+.jp-nav__link:hover{background:var(--jp-paper-2);color:var(--jp-amber-2)}
+.jp-search{position:relative;flex:0 1 230px}
+.jp-search input{
+  width:100%;padding:8px 34px 8px 13px;border-radius:999px;border:1px solid var(--jp-line);
+  background:var(--jp-white);font-size:13.5px;color:var(--jp-ink);
+}
+.jp-search input:focus{outline:none;border-color:var(--jp-amber);box-shadow:0 0 0 3px rgba(217,154,43,.18)}
+.jp-search__icon{position:absolute;right:11px;top:50%;transform:translateY(-50%);color:var(--jp-muted);font-size:14px;pointer-events:none}
+.jp-search__hint{
+  position:absolute;top:calc(100% + 8px);left:0;right:0;background:var(--jp-white);
+  border:1px solid var(--jp-line);border-radius:12px;box-shadow:var(--jp-shadow);padding:6px;
+  font-size:13px;display:none;z-index:70;
+}
+.jp-search__hint.is-open{display:block}
+.jp-search__hint li{padding:6px 9px;border-radius:8px;color:var(--jp-ink-2)}
+.jp-search__hint li small{color:var(--jp-muted)}
+.jp-search__hint li:hover{background:var(--jp-paper-2)}
+.jp-burger{display:none;width:42px;height:42px;border-radius:11px;border:1px solid var(--jp-line);background:var(--jp-white);align-items:center;justify-content:center;flex-direction:column;gap:5px}
+.jp-burger span{width:18px;height:2px;background:var(--jp-ink);border-radius:2px;transition:.25s}
+.jp-burger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.jp-burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+.jp-burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+/* ---------- 首屏 ---------- */
+.jp-hero{position:relative;overflow:hidden;padding:44px 0 56px;background:
+  radial-gradient(1100px 420px at 82% -10%, rgba(217,154,43,.18), transparent 60%),
+  radial-gradient(700px 380px at 0% 110%, rgba(61,107,138,.14), transparent 62%),
+  var(--jp-paper)}
+.jp-hero__grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,5fr);gap:40px;align-items:center}
+.jp-hero__eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:.2em;color:var(--jp-amber-2);font-weight:700;margin-bottom:16px}
+.jp-hero__eyebrow::before{content:"";width:26px;height:2px;background:var(--jp-amber)}
+.jp-hero h1{font-size:clamp(40px,6vw,72px);line-height:1.06;letter-spacing:.02em;color:var(--jp-ink)}
+.jp-hero h1 em{font-style:normal;color:var(--jp-amber-2);position:relative}
+.jp-hero h1 em::after{content:"";position:absolute;left:0;right:0;bottom:6px;height:9px;background:rgba(217,154,43,.24);z-index:-1}
+.jp-hero__lead{margin-top:18px;font-size:16.5px;color:var(--jp-ink-2);max-width:36em}
+.jp-hero__desc{margin-top:14px;font-size:14.5px;color:var(--jp-muted);max-width:38em}
+.jp-hero__badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}
+.jp-chip{font-size:11.5px;letter-spacing:.08em;padding:4px 11px;border-radius:999px;background:var(--jp-white);border:1px solid var(--jp-line);color:var(--jp-ink-2)}
+.jp-chip--amber{background:rgba(217,154,43,.13);border-color:rgba(217,154,43,.4);color:var(--jp-amber-2)}
+.jp-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.jp-btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:999px;font-size:14.5px;font-weight:600;transition:.22s;border:1px solid transparent}
+.jp-btn--solid{background:var(--jp-ink);color:#fdf8ec;box-shadow:var(--jp-shadow)}
+.jp-btn--solid:hover{background:#0f1a24;transform:translateY(-2px)}
+.jp-btn--ghost{background:transparent;color:var(--jp-ink);border-color:var(--jp-line)}
+.jp-btn--ghost:hover{border-color:var(--jp-amber);color:var(--jp-amber-2);background:rgba(217,154,43,.07)}
+.jp-btn--small{padding:8px 15px;font-size:13px}
+.jp-hero__visual{position:relative}
+.jp-hero__figure{position:relative;border-radius:22px;overflow:hidden;box-shadow:var(--jp-shadow-lg);border:1px solid rgba(24,36,48,.08)}
+.jp-hero__figure img{width:100%;aspect-ratio:4/3.4;object-fit:cover}
+.jp-hero__play{
+  position:absolute;left:18px;bottom:18px;display:flex;align-items:center;gap:10px;
+  background:rgba(15,26,36,.78);color:#fdf6e6;padding:9px 16px 9px 10px;border-radius:999px;
+  font-size:12.5px;backdrop-filter:blur(6px);
+}
+.jp-hero__play i{width:26px;height:26px;border-radius:50%;background:var(--jp-amber);display:grid;place-items:center;color:#1b1204;font-style:normal;font-size:10px}
+.jp-hero__stat{
+  position:absolute;right:-14px;top:22px;background:var(--jp-white);border-radius:16px;
+  box-shadow:var(--jp-shadow);padding:12px 16px;border:1px solid var(--jp-line);min-width:132px;
+}
+.jp-hero__stat b{display:block;font-size:22px;color:var(--jp-coral);line-height:1.1}
+.jp-hero__stat span{font-size:11.5px;color:var(--jp-muted);letter-spacing:.06em}
+.jp-hero__stat--b{top:auto;bottom:-18px;right:auto;left:-16px}
+.jp-hero__stat--b b{color:var(--jp-blue)}
+.jp-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:34px}
+.jp-metric{background:rgba(255,253,248,.72);border:1px solid var(--jp-line);border-radius:14px;padding:14px 16px}
+.jp-metric b{display:block;font-size:24px;letter-spacing:.01em;color:var(--jp-ink)}
+.jp-metric span{font-size:12px;color:var(--jp-muted);letter-spacing:.05em}
+.jp-metric small{display:block;margin-top:4px;font-size:11px;color:var(--jp-amber-2)}
+/* ---------- 通用 section ---------- */
+.jp-section{padding:62px 0}
+.jp-section--tight{padding:48px 0}
+.jp-section--alt{background:var(--jp-paper-2)}
+.jp-section--ink{background:linear-gradient(160deg,#182430,#203242 70%,#1b2b39);color:#e9e5d9}
+.jp-sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:32px}
+.jp-sec-head__left{max-width:640px}
+.jp-kicker{font-size:11.5px;letter-spacing:.22em;font-weight:700;color:var(--jp-amber-2);margin-bottom:10px;text-transform:uppercase}
+.jp-section--ink .jp-kicker{color:var(--jp-amber)}
+.jp-sec-head h2{font-size:clamp(25px,3.2vw,35px)}
+.jp-sec-head p{margin-top:10px;color:var(--jp-muted);font-size:14.5px}
+.jp-section--ink .jp-sec-head p{color:#b9c4c9}
+.jp-link-more{font-size:13px;font-weight:600;color:var(--jp-amber-2);display:inline-flex;align-items:center;gap:6px;border-bottom:1px solid rgba(184,122,20,.35);padding-bottom:2px}
+.jp-link-more:hover{color:var(--jp-coral);border-color:var(--jp-coral)}
+/* ---------- 焦点内容 ---------- */
+.jp-focus{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:26px;align-items:start}
+.jp-focus__main{border-radius:var(--jp-radius);overflow:hidden;background:var(--jp-white);border:1px solid var(--jp-line);box-shadow:var(--jp-shadow);transition:.25s}
+.jp-focus__main:hover{transform:translateY(-4px);box-shadow:var(--jp-shadow-lg)}
+.jp-focus__main img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.jp-focus__body{padding:22px 24px 26px}
+.jp-focus__body h3{font-size:22px;margin-bottom:10px}
+.jp-focus__meta{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--jp-muted);margin-bottom:12px}
+.jp-focus__body p{font-size:14.5px;color:var(--jp-ink-2)}
+.jp-tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px}
+.jp-tag{font-size:11px;padding:3px 9px;border-radius:6px;background:var(--jp-paper-2);color:var(--jp-ink-2);border:1px solid var(--jp-line)}
+.jp-tag--amber{background:rgba(217,154,43,.14);border-color:rgba(217,154,43,.35);color:var(--jp-amber-2)}
+.jp-focus__list{display:grid;gap:14px}
+.jp-mini{display:grid;grid-template-columns:78px minmax(0,1fr);gap:14px;background:var(--jp-white);border:1px solid var(--jp-line);border-radius:13px;padding:10px;transition:.2s}
+.jp-mini:hover{border-color:var(--jp-amber);transform:translateX(3px)}
+.jp-mini img{width:78px;height:78px;border-radius:9px;object-fit:cover}
+.jp-mini h4{font-size:14.5px;line-height:1.45;margin-bottom:5px}
+.jp-mini p{font-size:12.5px;color:var(--jp-muted);line-height:1.55;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.jp-mini__row{display:flex;align-items:center;gap:9px;font-size:11.5px;color:var(--jp-muted);margin-top:6px;flex-wrap:wrap}
+/* ---------- 视频流行 ---------- */
+.jp-video-toolbar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px}
+.jp-filter{font-size:12.5px;padding:6px 14px;border-radius:999px;border:1px solid var(--jp-line);background:var(--jp-white);color:var(--jp-ink-2);transition:.18s}
+.jp-filter:hover{border-color:var(--jp-amber)}
+.jp-filter.is-active{background:var(--jp-ink);color:#f9f2e2;border-color:var(--jp-ink)}
+.jp-videos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.jp-vcard{background:var(--jp-white);border:1px solid var(--jp-line);border-radius:15px;overflow:hidden;display:flex;flex-direction:column;transition:.22s}
+.jp-vcard:hover{transform:translateY(-4px);box-shadow:var(--jp-shadow)}
+.jp-vcard__thumb{position:relative}
+.jp-vcard__thumb img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.jp-vcard__dur{position:absolute;right:9px;bottom:9px;background:rgba(15,26,36,.8);color:#fdf6e6;font-size:11px;padding:2px 8px;border-radius:5px}
+.jp-vcard__body{padding:16px 17px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
+.jp-vcard__body h3{font-size:16px;line-height:1.45}
+.jp-vcard__body p{font-size:13px;color:var(--jp-muted);line-height:1.6}
+.jp-vcard__meta{display:flex;align-items:center;gap:10px;font-size:11.5px;color:var(--jp-muted);flex-wrap:wrap}
+.jp-vcard__author{display:inline-flex;align-items:center;gap:6px;font-weight:600;color:var(--jp-ink-2)}
+.jp-avat{width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-size:10px;font-weight:700;color:#fffdf8;flex:0 0 auto}
+.jp-avat--a{background:var(--jp-coral)}
+.jp-avat--b{background:var(--jp-blue)}
+.jp-avat--c{background:var(--jp-amber-2)}
+.jp-avat--d{background:#6c7a5b}
+.jp-avat--e{background:#8a5a74}
+.jp-avat--f{background:#3f5d6e}
+.jp-vcard__foot{display:flex;align-items:center;gap:6px;margin-top:auto;padding-top:8px;flex-wrap:wrap}
+.jp-iconbtn{display:inline-flex;align-items:center;gap:5px;font-size:12px;padding:5px 10px;border-radius:8px;border:1px solid var(--jp-line);background:var(--jp-paper);color:var(--jp-ink-2);transition:.18s}
+.jp-iconbtn:hover{border-color:var(--jp-amber);color:var(--jp-amber-2)}
+.jp-iconbtn.is-on{background:rgba(196,90,60,.12);border-color:rgba(196,90,60,.45);color:var(--jp-coral)}
+.jp-iconbtn.is-fav{background:rgba(217,154,43,.16);border-color:rgba(217,154,43,.5);color:var(--jp-amber-2)}
+/* ---------- 专题 ---------- */
+.jp-topics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.jp-topic{background:var(--jp-white);border:1px solid var(--jp-line);border-radius:15px;padding:20px;display:flex;flex-direction:column;gap:10px;transition:.22s}
+.jp-topic:hover{border-color:var(--jp-amber);transform:translateY(-3px);box-shadow:var(--jp-shadow)}
+.jp-topic--feature{background:linear-gradient(160deg,#1d2f3f,#17242f);color:#efe9da;border-color:#2a4053}
+.jp-topic--feature .jp-topic__status{background:rgba(217,154,43,.2);color:#ffd98a}
+.jp-topic__top{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.jp-topic h3{font-size:17px}
+.jp-topic__status{font-size:10.5px;letter-spacing:.1em;padding:3px 9px;border-radius:999px;background:var(--jp-paper-2);color:var(--jp-ink-2);white-space:nowrap}
+.jp-topic p{font-size:13px;line-height:1.65;color:var(--jp-muted)}
+.jp-topic--feature p{color:#b8c4cb}
+.jp-topic ul{display:grid;gap:6px;margin-top:4px}
+.jp-topic ul li{font-size:12.5px;padding-left:14px;position:relative;color:var(--jp-ink-2)}
+.jp-topic--feature ul li{color:#cdd6da}
+.jp-topic ul li::before{content:"";position:absolute;left:0;top:.62em;width:5px;height:5px;border-radius:50%;background:var(--jp-amber)}
+/* ---------- 解析长文 ---------- */
+.jp-essay{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:38px;align-items:start}
+.jp-essay__side{position:sticky;top:118px}
+.jp-essay__side h2{font-size:26px;margin-bottom:12px}
+.jp-essay__side p{font-size:13.5px;color:#a9b6bd}
+.jp-essay__toc{margin-top:18px;display:grid;gap:6px}
+.jp-essay__toc a{font-size:13px;color:#cfd8dc;padding:6px 10px;border-left:2px solid rgba(217,154,43,.4)}
+.jp-essay__toc a:hover{color:var(--jp-amber);border-color:var(--jp-amber)}
+.jp-essay__body{display:grid;gap:26px}
+.jp-essay blockquote{margin:0;padding:16px 20px;border-left:3px solid var(--jp-amber);background:rgba(255,255,255,.05);border-radius:0 10px 10px 0;font-size:14px;color:#dbe2e4}
+.jp-essay h3{font-size:19px;margin-bottom:10px;color:#fff6e2}
+.jp-essay p{font-size:14.5px;color:#c3ccd1;line-height:1.95;margin-bottom:12px}
+.jp-essay p b{color:#ffd98a;font-weight:600}
+.jp-essay__stat{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:6px}
+.jp-essay__stat div{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:11px;padding:12px}
+.jp-essay__stat b{display:block;font-size:20px;color:var(--jp-amber)}
+.jp-essay__stat span{font-size:11.5px;color:#a9b6bd}
+/* ---------- 作者 ---------- */
+.jp-authors{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.jp-author{display:grid;grid-template-columns:64px minmax(0,1fr);gap:16px;background:var(--jp-white);border:1px solid var(--jp-line);border-radius:15px;padding:18px;transition:.22s}
+.jp-author:hover{border-color:var(--jp-amber);box-shadow:var(--jp-shadow)}
+.jp-author__ava{width:64px;height:64px;border-radius:50%;display:grid;place-items:center;font-size:22px;font-weight:700;color:#fffdf8}
+.jp-author h3{font-size:16px;margin-bottom:3px;display:flex;align-items:center;gap:7px;flex-wrap:wrap}
+.jp-author h3 small{font-size:10.5px;font-weight:600;letter-spacing:.06em;padding:2px 7px;border-radius:5px;background:rgba(61,107,138,.13);color:var(--jp-blue)}
+.jp-author__tags{font-size:11.5px;color:var(--jp-muted);margin-bottom:7px}
+.jp-author__desc{font-size:13px;color:var(--jp-ink-2);line-height:1.65}
+.jp-author__nums{display:flex;gap:14px;margin-top:9px;font-size:11.5px;color:var(--jp-muted);flex-wrap:wrap}
+.jp-author__nums b{color:var(--jp-ink);font-size:13px}
+.jp-author__more{font-size:12px;font-weight:600;color:var(--jp-amber-2);margin-top:8px;display:inline-block;border-bottom:1px dashed rgba(184,122,20,.45)}
+/* ---------- 评论 ---------- */
+.jp-comments{display:grid;gap:16px}
+.jp-comment{background:var(--jp-white);border:1px solid var(--jp-line);border-radius:13px;padding:18px 20px}
+.jp-comment__head{display:flex;align-items:center;gap:10px;margin-bottom:9px}
+.jp-comment__head strong{font-size:13.5px}
+.jp-comment__head span{font-size:11.5px;color:var(--jp-muted)}
+.jp-stars{color:var(--jp-amber);font-size:12px;letter-spacing:1px;margin-left:auto}
+.jp-comment p{font-size:13.5px;color:var(--jp-ink-2);line-height:1.75}
+.jp-comment--quote{border-left:4px solid var(--jp-coral);background:linear-gradient(90deg,rgba(196,90,60,.07),var(--jp-white) 60%)}
+.jp-comment__tags{display:flex;gap:6px;margin-top:9px;flex-wrap:wrap}
+.jp-comment__tags span{font-size:10.5px;padding:2px 8px;border-radius:5px;background:var(--jp-paper-2);color:var(--jp-muted)}
+/* ---------- 动态 / 合作 / FAQ ---------- */
+.jp-grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.jp-news{background:var(--jp-white);border:1px solid var(--jp-line);border-radius:13px;padding:18px}
+.jp-news time{font-size:11.5px;letter-spacing:.1em;color:var(--jp-amber-2);font-weight:700}
+.jp-news h3{font-size:15.5px;margin:7px 0 6px}
+.jp-news p{font-size:13px;color:var(--jp-muted);line-height:1.65}
+.jp-partners{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.jp-partner{background:var(--jp-white);border:1px solid var(--jp-line);border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:6px;align-items:flex-start}
+.jp-partner b{font-size:14.5px}
+.jp-partner span{font-size:11.5px;color:var(--jp-muted)}
+.jp-faq{display:grid;gap:10px;max-width:860px;margin:0 auto}
+.jp-faq details{background:var(--jp-white);border:1px solid var(--jp-line);border-radius:12px;padding:0 18px;transition:.2s}
+.jp-faq details[open]{border-color:var(--jp-amber);box-shadow:var(--jp-shadow)}
+.jp-faq summary{list-style:none;cursor:pointer;padding:15px 0;font-size:14.5px;font-weight:600;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.jp-faq summary::-webkit-details-marker{display:none}
+.jp-faq summary::after{content:"+";font-size:19px;color:var(--jp-amber-2);flex:0 0 auto;font-weight:400}
+.jp-faq details[open] summary::after{content:"–"}
+.jp-faq details p{font-size:13.5px;color:var(--jp-muted);padding-bottom:16px;line-height:1.8}
+/* ---------- 页脚 ---------- */
+.jp-foot{background:#131f29;color:#a9b6bd;padding:54px 0 26px;font-size:13px}
+.jp-foot__grid{display:grid;grid-template-columns:minmax(0,1.6fr) repeat(3,minmax(0,1fr));gap:32px}
+.jp-foot h4{color:#f3ecd9;font-size:13px;letter-spacing:.14em;margin-bottom:14px}
+.jp-foot__brand{display:flex;align-items:center;gap:10px;margin-bottom:13px}
+.jp-foot__brand strong{color:#f3ecd9;font-size:16px;letter-spacing:.06em}
+.jp-foot p{line-height:1.85;font-size:12.5px}
+.jp-foot ul{display:grid;gap:9px}
+.jp-foot ul a:hover{color:var(--jp-amber)}
+.jp-foot__bottom{margin-top:36px;padding-top:18px;border-top:1px solid rgba(255,255,255,.1);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:12px;color:#7f8f98}
+.jp-foot__bottom span{letter-spacing:.04em}
+/* ---------- 回到顶部 / Toast ---------- */
+.jp-top{position:fixed;right:20px;bottom:26px;width:46px;height:46px;border-radius:50%;background:var(--jp-ink);color:#fdf6e6;display:grid;place-items:center;box-shadow:var(--jp-shadow-lg);opacity:0;pointer-events:none;transition:.25s;z-index:80;font-size:17px}
+.jp-top.is-show{opacity:1;pointer-events:auto}
+.jp-top:hover{background:var(--jp-amber-2)}
+.jp-toast{position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);background:rgba(19,31,41,.95);color:#fdf6e6;font-size:13px;padding:11px 20px;border-radius:999px;box-shadow:var(--jp-shadow-lg);opacity:0;pointer-events:none;transition:.3s;z-index:120}
+.jp-toast.is-show{opacity:1;transform:translate(-50%,0)}
+/* ---------- 弹层 ---------- */
+.jp-modal{position:fixed;inset:0;background:rgba(15,24,32,.55);display:none;place-items:center;padding:20px;z-index:110;backdrop-filter:blur(3px)}
+.jp-modal.is-open{display:grid}
+.jp-modal__box{background:var(--jp-white);border-radius:18px;max-width:520px;width:100%;padding:26px;box-shadow:var(--jp-shadow-lg);max-height:86vh;overflow:auto}
+.jp-modal__box h3{font-size:19px;margin-bottom:10px}
+.jp-modal__box p{font-size:13.5px;color:var(--jp-muted);line-height:1.75;margin-bottom:14px}
+.jp-modal__box label{display:block;font-size:12.5px;font-weight:600;margin:10px 0 5px}
+.jp-modal__box input,.jp-modal__box textarea,.jp-modal__box select{width:100%;padding:9px 12px;border-radius:9px;border:1px solid var(--jp-line);font-family:inherit;font-size:13.5px;background:var(--jp-paper);color:var(--jp-ink)}
+.jp-modal__box textarea{min-height:88px;resize:vertical}
+.jp-modal__foot{display:flex;gap:10px;justify-content:flex-end;margin-top:18px;flex-wrap:wrap}
+.jp-share-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.jp-share-list button{padding:12px 8px;border-radius:11px;border:1px solid var(--jp-line);background:var(--jp-paper);font-size:13px;font-weight:600}
+.jp-share-list button:hover{border-color:var(--jp-amber);color:var(--jp-amber-2)}
+/* ---------- 响应式 ---------- */
+@media (max-width:980px){
+  .jp-hero__grid{grid-template-columns:minmax(0,1fr);gap:30px}
+  .jp-hero__stat{right:10px}
+  .jp-hero__stat--b{left:10px;bottom:-14px}
+  .jp-focus{grid-template-columns:minmax(0,1fr)}
+  .jp-essay{grid-template-columns:minmax(0,1fr);gap:24px}
+  .jp-essay__side{position:static}
+  .jp-topics{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .jp-partners{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .jp-foot__grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .jp-nav{
+    position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;
+    background:var(--jp-white);border-bottom:1px solid var(--jp-line);padding:10px 18px 18px;gap:2px;
+    display:none;box-shadow:var(--jp-shadow);
+  }
+  .jp-nav.is-open{display:flex}
+  .jp-nav__link{padding:11px 10px;border-radius:8px}
+  .jp-head__inner{position:relative;flex-wrap:wrap}
+  .jp-search{flex:1 1 160px;order:3}
+  .jp-burger{display:flex;margin-left:auto}
+}
+@media (max-width:720px){
+  .jp-section{padding:44px 0}
+  .jp-videos{grid-template-columns:minmax(0,1fr)}
+  .jp-authors{grid-template-columns:minmax(0,1fr)}
+  .jp-topics{grid-template-columns:minmax(0,1fr)}
+  .jp-grid-3{grid-template-columns:minmax(0,1fr)}
+  .jp-metrics{grid-template-columns:minmax(0,1fr)}
+  .jp-hero__stat{display:none}
+  .jp-essay__stat{grid-template-columns:minmax(0,1fr)}
+  .jp-foot__grid{grid-template-columns:minmax(0,1fr)}
+  .jp-focus__body h3{font-size:19px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;animation:none!important;scroll-behavior:auto!important}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- S1 公告条 + 页头 -->
+<div class="jp-sticky">
+  <div class="jp-notice" id="jp-notice">
+    <div class="jp-wrap jp-notice__inner">
+      <span class="jp-notice__tag">官方发布</span>
+      <span class="jp-notice__text">「光与形」2026 冬之写真企划正式上线，<b>新增 18 部高清原创短片</b>，并开放创作者报名通道。</span>
+      <a class="jp-notice__link" href="#jp-topics">查看企划详情 →</a>
+    </div>
+  </div>
+  <header class="jp-head">
+    <div class="jp-wrap jp-head__inner">
+      <a class="jp-brand" href="#jp-hero" aria-label="日本写真官网首页">
+        <span class="jp-brand__mark" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e8b04b" stroke-width="1.7" stroke-linecap="round">
+            <circle cx="12" cy="11" r="5.4"/>
+            <circle cx="12" cy="11" r="1.8" fill="#e8b04b" stroke="none"/>
+            <path d="M7 20h10M9 17.5h6"/>
+          </svg>
+        </span>
+        <span class="jp-brand__name">
+          <strong>日本写真</strong>
+          <span>Photography Japan</span>
+        </span>
+      </a>
+      <nav class="jp-nav" id="jp-nav" aria-label="主导航">
+        <a class="jp-nav__link" href="#jp-focus">焦点</a>
+        <a class="jp-nav__link" href="#jp-videos">影像</a>
+        <a class="jp-nav__link" href="#jp-topics">专题</a>
+        <a class="jp-nav__link" href="#jp-essay">解析</a>
+        <a class="jp-nav__link" href="#jp-authors">创作者</a>
+        <a class="jp-nav__link" href="#jp-voices">口碑</a>
+        <a class="jp-nav__link" href="#jp-faq">帮助</a>
+      </nav>
+      <div class="jp-search">
+        <label class="jp-sr-only" for="jp-search-input">搜索日本写真相关内容</label>
+        <input id="jp-search-input" type="search" placeholder="搜索写真、创作者、专题…" autocomplete="off">
+        <span class="jp-search__icon" aria-hidden="true">⌕</span>
+        <ul class="jp-search__hint" id="jp-search-hint"></ul>
+      </div>
+      <button class="jp-burger" id="jp-burger" aria-label="展开导航菜单" aria-expanded="false" aria-controls="jp-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+</div>
+
+<main id="jp-main">
+
+  <!-- S2 品牌首屏 M1 -->
+  <section class="jp-hero" id="jp-hero">
+    <div class="jp-wrap">
+      <div class="jp-hero__grid">
+        <div class="jp-hero__copy">
+          <span class="jp-hero__eyebrow">官方网站 · 品牌影像门户</span>
+          <h1>日本写真<em>官网</em></h1>
+          <p class="jp-hero__lead">以光为笔，以形为纸。我们把日本写真文化的细腻质感，转化为可持续观看的高清原创影像，让每一次快门都被认真记录。</p>
+          <p class="jp-hero__desc">作为深耕写真领域的视频品牌平台，我们持续运营一条从创作者到观众的内容生态：品牌故事、在地文化、创作幕后与实用攻略，在此汇聚为值得信赖的精品内容社区。</p>
+          <div class="jp-hero__badges">
+            <span class="jp-chip jp-chip--amber">原创 · 正版</span>
+            <span class="jp-chip">高清 4K</span>
+            <span class="jp-chip">创作者社区</span>
+            <span class="jp-chip">行业领先影像企划</span>
+          </div>
+          <div class="jp-actions">
+            <a class="jp-btn jp-btn--solid" href="#jp-videos">进入影像库</a>
+            <a class="jp-btn jp-btn--ghost" href="#jp-topics">浏览本期专题</a>
+            <button class="jp-btn jp-btn--ghost" id="jp-open-submit">投稿 / 报名</button>
+          </div>
+          <div class="jp-metrics">
+            <div class="jp-metric"><b data-count="1280">0</b><span>原创短片总数</span><small>持续更新中</small></div>
+            <div class="jp-metric"><b data-count="96">0</b><span>签约创作者</span><small>覆盖 14 个地区</small></div>
+            <div class="jp-metric"><b data-count="412">0</b><span>月度精品内容</span><small>官方发布</small></div>
+          </div>
+        </div>
+        <div class="jp-hero__visual">
+          <figure class="jp-hero__figure">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 680'%3E%3Cdefs%3E%3ClinearGradient id='sky' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23243b52'/%3E%3Cstop offset='.55' stop-color='%2358748c'/%3E%3Cstop offset='1' stop-color='%23d9b48a'/%3E%3C/linearGradient%3E%3ClinearGradient id='mount' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231a2b3a'/%3E%3Cstop offset='1' stop-color='%232e4658'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='680' fill='url(%23sky)'/%3E%3Ccircle cx='586' cy='168' r='74' fill='%23f0c579' opacity='.92'/%3E%3Ccircle cx='586' cy='168' r='112' fill='%23f0c579' opacity='.14'/%3E%3Cpath d='M0 470 L150 360 L280 452 L420 330 L560 448 L690 372 L800 442 L800 680 L0 680 Z' fill='url(%23mount)'/%3E%3Cpath d='M0 556 L170 470 L330 548 L480 468 L640 552 L800 486 L800 680 L0 680 Z' fill='%2314202b' opacity='.86'/%3E%3Cg stroke='%23f6e3c4' stroke-width='2' opacity='.5'%3E%3Cpath d='M120 620 L230 545 L380 610'/%3E%3Cpath d='M470 626 L600 540 L740 610'/%3E%3C/g%3E%3Cg fill='%23f6e3c4' opacity='.85'%3E%3Ccircle cx='140' cy='120' r='2.6'/%3E%3Ccircle cx='250' cy='86' r='2'/%3E%3Ccircle cx='352' cy='150' r='2.4'/%3E%3Ccircle cx='690' cy='96' r='2.2'/%3E%3Ccircle cx='724' cy='214' r='1.8'/%3E%3Ccircle cx='96' cy='236' r='1.9'/%3E%3C/g%3E%3Cg%3E%3Crect x='330' y='470' width='140' height='96' rx='4' fill='%23111c25'/%3E%3Crect x='348' y='486' width='104' height='64' rx='3' fill='%23c9a26a' opacity='.55'/%3E%3C/g%3E%3Crect x='0' y='0' width='800' height='680' fill='none' stroke='%23ffffff' stroke-opacity='.12' stroke-width='8'/%3E%3C/svg%3E" width="800" height="680" alt="日本写真官网首屏主视觉：暮色山峦与暖色夕阳构成的写真取景地实景构图">
+            <figcaption class="jp-hero__play"><i aria-hidden="true">▶</i>本期主推 · 《暮色取景地》4K 正片</figcaption>
+          </figure>
+          <div class="jp-hero__stat"><b>4K</b><span>原生高清画质</span></div>
+          <div class="jp-hero__stat jp-hero__stat--b"><b>18</b><span>本期新增短片</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S3 焦点内容 M2 -->
+  <section class="jp-section" id="jp-focus">
+    <div class="jp-wrap">
+      <div class="jp-sec-head">
+        <div class="jp-sec-head__left">
+          <div class="jp-kicker">Focus / 本期焦点</div>
+          <h2>日本写真焦点内容：从取景地到成品的三重视角</h2>
+          <p>编辑部从本期上线内容中挑选最具代表性的原创作品，带你走进写真拍摄的真实现场与创作逻辑。</p>
+        </div>
+        <a class="jp-link-more" href="#jp-videos">全部影像 →</a>
+      </div>
+      <div class="jp-focus">
+        <article class="jp-focus__main">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Cdefs%3E%3ClinearGradient id='w1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23e8dcc6'/%3E%3Cstop offset='1' stop-color='%23c9a26a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='450' fill='url(%23w1)'/%3E%3Cg stroke='%23445a6a' stroke-width='1.4' opacity='.6'%3E%3Cpath d='M40 60 H760M40 120 H760M40 180 H760M40 240 H760M40 300 H760M40 360 H760'/%3E%3Cpath d='M100 30 V420M200 30 V420M300 30 V420M400 30 V420M500 30 V420M600 30 V420M700 30 V420'/%3E%3C/g%3E%3Cg%3E%3Crect x='250' y='130' width='300' height='210' rx='10' fill='%23fffdf7' stroke='%23445a6a' stroke-width='3'/%3E%3Ccircle cx='400' cy='226' r='62' fill='%23f2e6cc' stroke='%23445a6a' stroke-width='3'/%3E%3Ccircle cx='400' cy='226' r='26' fill='%233d6b8a'/%3E%3Ccircle cx='400' cy='226' r='26' fill='none' stroke='%23ffffff' stroke-width='2' opacity='.6'/%3E%3Crect x='262' y='142' width='80' height='30' rx='6' fill='%23c45a3c'/%3E%3Crect x='470' y='310' width='62' height='18' rx='9' fill='%23b87a14'/%3E%3C/g%3E%3Cg fill='%23445a6a' opacity='.5'%3E%3Ccircle cx='92' cy='392' r='6'/%3E%3Ccircle cx='716' cy='74' r='9'/%3E%3Ccircle cx='640' cy='400' r='4'/%3E%3C/g%3E%3C/svg%3E" width="800" height="450" alt="焦点内容封面：相机取景框构图示意图，展示日本写真取景与构图教学场景">
+          <div class="jp-focus__body">
+            <div class="jp-focus__meta">
+              <span>教程干货</span><span>时长 14:26</span><span>播放 128,430</span><span>2026-11-18</span>
+            </div>
+            <h3>取景框里的日本写真：三分法与留白的再理解</h3>
+            <p>本期焦点短片以实拍为线索，拆解日式写真中常见的“留白呼吸感”。从京都町屋的窄巷到湘南海岸的逆光，画面如何在克制中找到张力，构图规则又该如何在意境面前适度让位——这支视频给出了一套可复用的判断方法。</p>
+            <div class="jp-tags">
+              <span class="jp-tag jp-tag--amber">日本写真</span>
+              <span class="jp-tag">构图教学</span>
+              <span class="jp-tag">高清实拍</span>
+              <span class="jp-tag">取景地</span>
+            </div>
+            <div class="jp-vcard__foot" style="margin-top:16px">
+              <button class="jp-iconbtn" data-like data-on="已点赞" data-off="点赞">♡ 点赞 <b data-num>3284</b></button>
+              <button class="jp-iconbtn" data-fav data-on="已收藏" data-off="收藏">☆ 收藏</button>
+              <button class="jp-iconbtn" data-copy>复制链接</button>
+              <button class="jp-iconbtn" data-share>分享</button>
+            </div>
+          </div>
+        </article>
+        <div class="jp-focus__list">
+          <article class="jp-mini">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 160'%3E%3Crect width='160' height='160' fill='%232f4658'/%3E%3Cpath d='M0 108 L52 74 L100 112 L130 92 L160 112 L160 160 L0 160 Z' fill='%231b2b39'/%3E%3Ccircle cx='118' cy='42' r='20' fill='%23f0c579'/%3E%3Cg stroke='%238fa8b6' stroke-width='1.4' opacity='.6'%3E%3Cpath d='M20 30 H70M20 46 H56'/%3E%3C/g%3E%3C/svg%3E" width="160" height="160" alt="推荐内容缩略图：湘南海岸逆光剪影与取景线稿">
+            <div>
+              <h4>湘南海岸的逆光十分钟：一次近乎苛刻的实拍记录</h4>
+              <p>为了那束从海面折返的光，摄制组在堤岸上等了四个傍晚，最终得到一条不修饰的成片。</p>
+              <div class="jp-mini__row"><span class="jp-avat jp-avat--b">海</span>海野工作室 · 播放 6.2 万</div>
+            </div>
+          </article>
+          <article class="jp-mini">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 160'%3E%3Crect width='160' height='160' fill='%23efe0c8'/%3E%3Crect x='22' y='34' width='116' height='92' rx='6' fill='%23fffdf7' stroke='%23a5814f' stroke-width='2'/%3E%3Cg fill='%23a5814f'%3E%3Crect x='34' y='48' width='56' height='6' rx='3'/%3E%3Crect x='34' y='64' width='90' height='4' rx='2' opacity='.6'/%3E%3Crect x='34' y='76' width='74' height='4' rx='2' opacity='.6'/%3E%3Crect x='34' y='88' width='84' height='4' rx='2' opacity='.6'/%3E%3C/g%3E%3Crect x='96' y='100' width='34' height='16' rx='8' fill='%23c45a3c'/%3E%3C/svg%3E" width="160" height="160" alt="推荐内容缩略图：写真拍摄企划手稿与分镜笔记">
+            <div>
+              <h4>一支写真短片的分镜手稿：从灵感笔记到最终开机</h4>
+              <p>创作幕后完整还原，包含美术、灯位与拍摄脚本的三轮修改版本，适合初学者对照学习。</p>
+              <div class="jp-mini__row"><span class="jp-avat jp-avat--c">林</span>林间绘 · 播放 4.8 万</div>
+            </div>
+          </article>
+          <article class="jp-mini">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 160'%3E%3Crect width='160' height='160' fill='%23c96a4a'/%3E%3Ccircle cx='80' cy='62' r='26' fill='%23fbe6cf'/%3E%3Cpath d='M30 160 Q80 96 130 160 Z' fill='%23352a26'/%3E%3Cg stroke='%23fbe6cf' stroke-width='2' opacity='.7'%3E%3Cpath d='M18 118 H142'/%3E%3Cpath d='M18 130 H142'/%3E%3C/g%3E%3C/svg%3E" width="160" height="160" alt="推荐内容缩略图：人物访谈剪影与暖色背景">
+            <div>
+              <h4>人物访谈：在东京做写真编辑的第七年</h4>
+              <p>从选题会到印厂校色，一位编辑讲述纸面与屏幕之间，那些反复被放弃与被保留的瞬间。</p>
+              <div class="jp-mini__row"><span class="jp-avat jp-avat--e">真</span>真夜书房 · 播放 3.6 万</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S3 视频流 M3 -->
+  <section class="jp-section jp-section--alt" id="jp-videos">
+    <div class="jp-wrap">
+      <div class="jp-sec-head">
+        <div class="jp-sec-head__left">
+          <div class="jp-kicker">Library / 影像库</div>
+          <h2>日本写真热门影像：六部值得完整看完的原创短片</h2>
+          <p>覆盖教程、访谈、城市探索与创作幕后，每条内容均由创作者上传并经官方审核发布。</p>
+        </div>
+      </div>
+      <div class="jp-video-toolbar" id="jp-filters" role="group" aria-label="影像标签筛选">
+        <button class="jp-filter is-active" data-filter="all">全部</button>
+        <button class="jp-filter" data-filter="教程">教程</button>
+        <button class="jp-filter" data-filter="访谈">访谈</button>
+        <button class="jp-filter" data-filter="城市">城市</button>
+        <button class="jp-filter" data-filter="幕后">幕后</button>
+        <button class="jp-filter" data-filter="生活方式">生活方式</button>
+      </div>
+      <div class="jp-videos" id="jp-video-grid">
+        <article class="jp-vcard" data-cat="教程 城市">
+          <div class="jp-vcard__thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%23dfe7ea'/%3E%3Cg stroke='%23567686' stroke-width='2' opacity='.7'%3E%3Cpath d='M0 340 H800M0 380 H800'/%3E%3Cpath d='M120 250 V430M260 220 V430M400 270 V430M540 210 V430M680 260 V430'/%3E%3C/g%3E%3Ccircle cx='640' cy='96' r='42' fill='%23e9b45c'/%3E%3Cpath d='M0 300 L180 236 L360 296 L560 226 L800 292 L800 450 L0 450 Z' fill='%23283f52'/%3E%3Crect x='330' y='300' width='140' height='8' rx='4' fill='%23f4f1ea' opacity='.7'/%3E%3C/svg%3E" width="800" height="450" alt="视频封面：清晨街道与低角度光影的日式城市写真教程画面">
+            <span class="jp-vcard__dur">16:40</span>
+          </div>
+          <div class="jp-vcard__body">
+            <h3>清晨六点的街道光线：城市写真拍摄时间表</h3>
+            <p>以镰仓与金泽两座城市为例，拆解清晨不同时段的色温变化，并给出可执行的拍摄路线与器材建议。</p>
+            <div class="jp-tags"><span class="jp-tag jp-tag--amber">日本写真</span><span class="jp-tag">城市探索</span><span class="jp-tag">教程干货</span></div>
+            <div class="jp-vcard__meta">
+              <span class="jp-vcard__author"><span class="jp-avat jp-avat--a">光</span>光野记录</span>
+              <span>播放 9.6 万</span><span>点赞 4120</span><span>收藏 2870</span>
+            </div>
+            <div class="jp-vcard__foot">
+              <button class="jp-iconbtn" data-like data-on="已点赞" data-off="点赞">♡ 点赞 <b data-num>4120</b></button>
+              <button class="jp-iconbtn" data-fav data-on="已收藏" data-off="收藏">☆ 收藏</button>
+              <button class="jp-iconbtn" data-copy>复制链接</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="jp-vcard" data-cat="访谈 幕后">
+          <div class="jp-vcard__thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%23443c3a'/%3E%3Crect x='120' y='80' width='560' height='290' rx='14' fill='%235c504b'/%3E%3Ccircle cx='290' cy='210' r='56' fill='%23e6c9a8'/%3E%3Cpath d='M214 370 Q290 286 366 370 Z' fill='%23241f1d'/%3E%3Ccircle cx='520' cy='210' r='56' fill='%23d8b28c'/%3E%3Cpath d='M444 370 Q520 286 596 370 Z' fill='%23241f1d'/%3E%3Crect x='120' y='80' width='560' height='290' rx='14' fill='none' stroke='%23e9b45c' stroke-width='3' opacity='.6'/%3E%3C/svg%3E" width="800" height="450" alt="视频封面：两位写真编辑对坐访谈的暖调场景">
+            <span class="jp-vcard__dur">22:08</span>
+          </div>
+          <div class="jp-vcard__body">
+            <h3>访谈：写真编辑如何在屏幕时代守住纸质质感</h3>
+            <p>两位从业者聊了三个小时，我们保留了最难剪的部分——关于选片、退货重印与“不够好”的自我怀疑。</p>
+            <div class="jp-tags"><span class="jp-tag jp-tag--amber">日本写真</span><span class="jp-tag">人物访谈</span><span class="jp-tag">纸媒</span></div>
+            <div class="jp-vcard__meta">
+              <span class="jp-vcard__author"><span class="jp-avat jp-avat--e">真</span>真夜书房</span>
+              <span>播放 6.1 万</span><span>点赞 2830</span><span>收藏 1940</span>
+            </div>
+            <div class="jp-vcard__foot">
+              <button class="jp-iconbtn" data-like data-on="已点赞" data-off="点赞">♡ 点赞 <b data-num>2830</b></button>
+              <button class="jp-iconbtn" data-fav data-on="已收藏" data-off="收藏">☆ 收藏</button>
+              <button class="jp-iconbtn" data-copy>复制链接</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="jp-vcard" data-cat="城市 生活方式">
+          <div class="jp-vcard__thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%23f2e8d8'/%3E%3Cg fill='%23a58b6a'%3E%3Crect x='60' y='150' width='120' height='300'/%3E%3Crect x='200' y='110' width='140' height='340'/%3E%3Crect x='360' y='170' width='110' height='280'/%3E%3Crect x='490' y='130' width='150' height='320'/%3E%3Crect x='660' y='180' width='100' height='270'/%3E%3C/g%3E%3Cg fill='%23fffdf6' opacity='.8'%3E%3Crect x='78' y='176' width='26' height='34'/%3E%3Crect x='118' y='176' width='26' height='34'/%3E%3Crect x='222' y='140' width='30' height='40'/%3E%3Crect x='272' y='140' width='30' height='40'/%3E%3Crect x='512' y='160' width='28' height='38'/%3E%3Crect x='562' y='160' width='28' height='38'/%3E%3C/g%3E%3Crect x='0' y='400' width='800' height='50' fill='%23c9b394'/%3E%3C/svg%3E" width="800" height="450" alt="视频封面：町屋街区立面与文化散步写真取景">
+            <span class="jp-vcard__dur">18:12</span>
+          </div>
+          <div class="jp-vcard__body">
+            <h3>町屋散步：把老街的呼吸拍进一分钟短片</h3>
+            <p>一次不赶时间的在地影像记录，从木格窗到屋檐滴水，镜头贴着墙走，让街区自己说话。</p>
+            <div class="jp-tags"><span class="jp-tag jp-tag--amber">日本写真</span><span class="jp-tag">在地文化</span><span class="jp-tag">散步</span></div>
+            <div class="jp-vcard__meta">
+              <span class="jp-vcard__author"><span class="jp-avat jp-avat--d">町</span>町屋影像</span>
+              <span>播放 8.3 万</span><span>点赞 3690</span><span>收藏 2410</span>
+            </div>
+            <div class="jp-vcard__foot">
+              <button class="jp-iconbtn" data-like data-on="已点赞" data-off="点赞">♡ 点赞 <b data-num>3690</b></button>
+              <button class="jp-iconbtn" data-fav data-on="已收藏" data-off="收藏">☆ 收藏</button>
+              <button class="jp-iconbtn" data-copy>复制链接</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="jp-vcard" data-cat="幕后 教程">
+          <div class="jp-vcard__thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%231e3140'/%3E%3Cg stroke='%236f93a8' stroke-width='2' opacity='.65'%3E%3Cpath d='M80 60 V390M200 60 V390M320 60 V390M440 60 V390M560 60 V390M680 60 V390'/%3E%3Cpath d='M60 120 H740M60 230 H740M60 340 H740'/%3E%3C/g%3E%3Ccircle cx='300' cy='230' r='52' fill='%23e9b45c' opacity='.9'/%3E%3Ccircle cx='580' cy='230' r='52' fill='%236f93a8' opacity='.7'/%3E%3Cpath d='M300 230 L580 230' stroke='%23f4f1ea' stroke-width='2' stroke-dasharray='6 6'/%3E%3C/svg%3E" width="800" height="450" alt="视频封面：灯光位示意图与双灯布置幕后场景">
+            <span class="jp-vcard__dur">13:37</span>
+          </div>
+          <div class="jp-vcard__body">
+            <h3>一盏灯也能拍好人像写真：极简布光复盘</h3>
+            <p>不依赖大型影棚，一支柔光箱加一块反光板，复现日式柔和肤质的完整布光思路与参数对照。</p>
+            <div class="jp-tags"><span class="jp-tag jp-tag--amber">日本写真</span><span class="jp-tag">创作幕后</span><span class="jp-tag">布光</span></div>
+            <div class="jp-vcard__meta">
+              <span class="jp-vcard__author"><span class="jp-avat jp-avat--c">林</span>林间绘</span>
+              <span>播放 7.4 万</span><span>点赞 3250</span><span>收藏 2180</span>
+            </div>
+            <div class="jp-vcard__foot">
+              <button class="jp-iconbtn" data-like data-on="已点赞" data-off="点赞">♡ 点赞 <b data-num>3250</b></button>
+              <button class="jp-iconbtn" data-fav data-on="已收藏" data-off="收藏">☆ 收藏</button>
+              <button class="jp-iconbtn" data-copy>复制链接</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="jp-vcard" data-cat="生活方式 城市">
+          <div class="jp-vcard__thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%23e9e2d2'/%3E%3Crect x='0' y='300' width='800' height='150' fill='%23c6bda5'/%3E%3Cg%3E%3Crect x='180' y='180' width='440' height='120' rx='8' fill='%23fffdf6' stroke='%23958b74' stroke-width='2'/%3E%3Crect x='210' y='150' width='380' height='32' rx='16' fill='%23b87a14'/%3E%3Cg fill='%23958b74'%3E%3Ccircle cx='260' cy='340' r='16'/%3E%3Ccircle cx='540' cy='340' r='16'/%3E%3C/g%3E%3C/g%3E%3Ccircle cx='112' cy='96' r='30' fill='%23d9b48a'/%3E%3Cpath d='M0 264 L120 224 L240 268 L380 220 L520 266 L660 218 L800 262 L800 300 L0 300 Z' fill='%23a89b7f' opacity='.5'/%3E%3C/svg%3E" width="800" height="450" alt="视频封面：移动写真摊位与街边生活场景">
+            <span class="jp-vcard__dur">09:54</span>
+          </div>
+          <div class="jp-vcard__body">
+            <h3>周末写真摊位：一台相机换一段陌生人的故事</h3>
+            <p>把相机搬到市集，免费为路人拍一张照片，再请他们讲一句今天的心情，剪成温柔的三分钟。</p>
+            <div class="jp-tags"><span class="jp-tag jp-tag--amber">日本写真</span><span class="jp-tag">生活方式</span><span class="jp-tag">治愈影像</span></div>
+            <div class="jp-vcard__meta">
+              <span class="jp-vcard__author"><span class="jp-avat jp-avat--b">海</span>海野工作室</span>
+              <span>播放 11.2 万</span><span>点赞 5210</span><span>收藏 3060</span>
+            </div>
+            <div class="jp-vcard__foot">
+              <button class="jp-iconbtn" data-like data-on="已点赞" data-off="点赞">♡ 点赞 <b data-num>5210</b></button>
+              <button class="jp-iconbtn" data-fav data-on="已收藏" data-off="收藏">☆ 收藏</button>
+              <button class="jp-iconbtn" data-copy>复制链接</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="jp-vcard" data-cat="访谈 城市">
+          <div class="jp-vcard__thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%23354a5c'/%3E%3Cg stroke='%238ba7b8' stroke-width='1.6' opacity='.5'%3E%3Cpath d='M0 150 H800M0 300 H800'/%3E%3Cpath d='M160 0 V450M400 0 V450M640 0 V450'/%3E%3C/g%3E%3Ccircle cx='400' cy='190' r='66' fill='%23d9b48a'/%3E%3Cpath d='M310 400 Q400 292 490 400 Z' fill='%23f4f1ea'/%3E%3Crect x='140' y='60' width='150' height='10' rx='5' fill='%23e9b45c'/%3E%3C/svg%3E" width="800" height="450" alt="视频封面：海边创作者访谈与人物剪影">
+            <span class="jp-vcard__dur">25:30</span>
+          </div>
+          <div class="jp-vcard__body">
+            <h3>海边长大的摄影师：访谈里那些没写进作品集的事</h3>
+            <p>提到创作时他反复说“等”，等潮水、等云散、等一个人回头。这场访谈关于耐心，也关于放弃。</p>
+            <div class="jp-tags"><span class="jp-tag jp-tag--amber">日本写真</span><span class="jp-tag">人物访谈</span><span class="jp-tag">海岸</span></div>
+            <div class="jp-vcard__meta">
+              <span class="jp-vcard__author"><span class="jp-avat jp-avat--f">岸</span>岸线频道</span>
+              <span>播放 5.7 万</span><span>点赞 2440</span><span>收藏 1620</span>
+            </div>
+            <div class="jp-vcard__foot">
+              <button class="jp-iconbtn" data-like data-on="已点赞" data-off="点赞">♡ 点赞 <b data-num>2440</b></button>
+              <button class="jp-iconbtn" data-fav data-on="已收藏" data-off="收藏">☆ 收藏</button>
+              <button class="jp-iconbtn" data-copy>复制链接</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S4 专题 M4 -->
+  <section class="jp-section" id="jp-topics">
+    <div class="jp-wrap">
+      <div class="jp-sec-head">
+        <div class="jp-sec-head__left">
+          <div class="jp-kicker">Series / 企划与专题</div>
+          <h2>日本写真专题企划：三条正在更新的内容线</h2>
+          <p>由官方编辑部与创作者共同策划，围绕季节、地域与工艺持续更新，形成可长期追踪的精品内容序列。</p>
+        </div>
+      </div>
+      <div class="jp-topics">
+        <article class="jp-topic jp-topic--feature">
+          <div class="jp-topic__top">
+            <h3>「光与形」2026 冬之写真</h3>
+            <span class="jp-topic__status">更新中</span>
+          </div>
+          <p>冬季低角度光线是写真最有性格的季节。本企划以 12 个取景地为基础，持续上线短片与拍摄攻略，同步开放创作者报名。</p>
+          <ul>
+            <li>已上线 18 部原创短片，含 4 部 4K 正片</li>
+            <li>新增《雪后清晨》拍摄时间表与器材清单</li>
+            <li>创作者报名通道开放至 12 月 20 日</li>
+          </ul>
+          <a class="jp-link-more" href="#jp-videos">进入企划 →</a>
+        </article>
+        <article class="jp-topic">
+          <div class="jp-topic__top">
+            <h3>在地文化：町屋与海岸</h3>
+            <span class="jp-topic__status">每周更新</span>
+          </div>
+          <p>我们把镜头贴近街区与海岸线，记录那些容易被游客忽略的日常纹理，让日本写真回到它真实的生活现场。</p>
+          <ul>
+            <li>《木格窗的九个机位》已完成外景</li>
+            <li>《潮汐之后的堤岸》进入后期调色</li>
+            <li>与本地档案馆合作整理影像资料</li>
+          </ul>
+          <a class="jp-link-more" href="#jp-videos">查看更新 →</a>
+        </article>
+        <article class="jp-topic">
+          <div class="jp-topic__top">
+            <h3>工艺手册：器材与后期</h3>
+            <span class="jp-topic__status">连载中</span>
+          </div>
+          <p>面向进阶创作者的实用专题，覆盖镜头选择、色彩管理、扫描与印前校色，强调可复现的流程与真实数据。</p>
+          <ul>
+            <li>《胶片扫描的三套参数对照》已发布</li>
+            <li>《肤色还原：从相机到屏幕》制作中</li>
+            <li>开放读者提问，问题将进入下期正片</li>
+          </ul>
+          <a class="jp-link-more" href="#jp-essay">阅读解析 →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S4/M15 关键词解析长文 -->
+  <section class="jp-section jp-section--ink" id="jp-essay">
+    <div class="jp-wrap">
+      <div class="jp-essay">
+        <aside class="jp-essay__side">
+          <div class="jp-kicker">Insight / 深度解析</div>
+          <h2>日本写真为什么值得被认真观看</h2>
+          <p>从文化脉络到制作方法，一篇写给新观众与创作者的完整解析。</p>
+          <nav class="jp-essay__toc" aria-label="解析目录">
+            <a href="#jp-essay-1">一、写真不是照片的别名</a>
+            <a href="#jp-essay-2">二、克制的构图与呼吸感</a>
+            <a href="#jp-essay-3">三、从纸面到屏幕的迁移</a>
+            <a href="#jp-essay-4">四、内容生态与长期主义</a>
+          </nav>
+        </aside>
+        <div class="jp-essay__body">
+          <h3 id="jp-essay-1">一、日本写真不是“照片”的别名</h3>
+          <p>在中文语境里，“写真”常被简化成照片的同义词，但在日本写真的传统里，它更接近一种有意图的观看方式。摄影师不是被动记录者，而是主动选择“让什么进入画面、让什么留在画外”的人。<b>这种选择本身就是内容</b>，也是日本写真区别于随手拍的核心。我们做这个视频品牌，第一步就是把这种“选择”讲清楚：一支短片为什么不从人物开始，而先拍一段空镜；为什么一个镜头要停三秒而不是一秒；为什么有些成片刻意保留了对焦的迟疑。这些都不是技术瑕疵，而是审美判断的痕迹。</p>
+          <p>写真的历史与技术演进紧密相关。从早期摄影术传入，到战后杂志文化的繁荣，再到数码与社交平台的普及，每一次媒介变化都重塑了“写真”的边界。今天的日本写真既存在于精装画册，也存在于竖屏短视频；既服务于商业广告，也服务于个人表达。作为平台，我们不急于给写真下单一的定义，而是通过原创短片把这些并存的路径展示出来，让观众自己形成判断。这也是我们坚持高清、正版、原创三个标准的原因：只有清晰的画质与完整的授权，观看才是可信的。</p>
+          <h3 id="jp-essay-2">二、克制的构图与呼吸感从哪里来</h3>
+          <p>很多初学者会把日式写真总结为“低饱和、留白多、逆光”。这些标签并非错误，但过于表面。真正让画面有呼吸感的，是一整套关于秩序与节奏的判断。<b>第一是边界意识</b>：画面边缘不放无关元素，宁可让主体偏小，也不让杂物抢戏。<b>第二是层次控制</b>：前景、中景、远景各自承担不同信息，避免所有内容挤在同一平面上。<b>第三是时间感</b>：通过人物的停顿、衣角的摆动、光线的移动，让静止画面产生“正在发生”的错觉。我们的教程短片会把这些判断拆成可操作的步骤，比如先定地平线，再定主体位置，最后才考虑曝光与色彩。</p>
+          <p>构图之外，器材与流程同样重要。日本写真常用的中长焦段并不是为了“压缩空间好看”，而是为了在有限空间中建立稳定的观看距离。这个距离让人物保持自然，也让环境信息不被过度强调。我们在《一盏灯也能拍好人像写真》里给出了完整的布光对照，目的不是让所有人复制同一套参数，而是让创作者理解每个参数背后的意图。当你明白为什么要这样做，才有资格决定什么时候不这样做。</p>
+          <blockquote>“好的写真不解释自己，但它经得起反复看。”——本期访谈中一位编辑的原话，我们把它放在这里，作为内容筛选的标准之一。</blockquote>
+          <h3 id="jp-essay-3">三、从纸面到屏幕：迁移中的取舍</h3>
+          <p>纸质画册与视频平台面对的是两种观看习惯。画册可以反复翻页，读者拥有节奏控制权；视频必须自己建立节奏，否则观众会在第三秒划走。因此，当日本写真进入视频形态，创作者需要重新设计叙事：先给一个可被记住的画面，再交代背景，最后留下一个开放的问题。我们在平台上看到大量优秀的迁移实践，比如用一段环境声开场，用字幕代替旁白，用长镜头替代剪辑炫技。这些选择让影像保留了写真的克制，也适应了屏幕的注意力规则。</p>
+          <p>技术层面，高清与色彩管理是迁移能否成立的基础。同一张照片在不同屏幕上的差异，往往比拍摄时的偏差更影响观感。我们的《胶片扫描的三套参数对照》给出了从扫描到输出的完整链路，并强调“以最终观看设备为准”的原则。这不是追求绝对统一，而是让创作者知道偏差来自哪里，从而做出有意识的选择。正版与授权同样重要：只有在合法使用的前提下，作品才能被长期传播，平台的内容生态才有稳定的地基。</p>
+          <h3 id="jp-essay-4">四、内容生态与长期主义</h3>
+          <p>一个视频品牌的官网，不只是作品陈列柜，更是一套持续运转的机制。<b>创作者需要稳定的发布节奏、清晰的审核标准和可预期的反馈</b>；观众需要可信的内容来源和舒适的浏览体验；品牌需要把价值观落实到每一个页面细节。我们为此建立了三条内容线：教程与攻略解决“怎么做”，访谈与幕后解决“为什么做”，在地影像解决“在哪里做”。三条线互相支撑，让日本写真这个主题不会在更新中耗散。</p>
+          <p>社区活力来自真实的互动。点赞、收藏、评论、投稿、报名，这些看似简单的动作，构成了创作者与观众之间的往复。我们坚持公开数据、公开审核、公开更新日志，让每一次发布都可被追踪。企业动态不是宣传口号，而是具体的时间、数量与变化；FAQ 不是免责声明，而是对真实问题的正面回答。<b>长期主义不是慢，而是不反复推翻自己</b>。当一个平台愿意用三年时间把一个主题讲透，用户自然会把它当作首选，这也是我们对“值得信赖”四个字最朴素的理解。</p>
+          <div class="jp-essay__stat">
+            <div><b>3000+</b><span>篇原创图文与脚本</span></div>
+            <div><b>14</b><span>覆盖地区与取景地</span></div>
+            <div><b>92%</b><span>创作者年度续约率</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S5 创作者 M5 -->
+  <section class="jp-section" id="jp-authors">
+    <div class="jp-wrap">
+      <div class="jp-sec-head">
+        <div class="jp-sec-head__left">
+          <div class="jp-kicker">Creators / 创作者矩阵</div>
+          <h2>日本写真社区创作者：六位持续更新的影像作者</h2>
+          <p>他们来自不同城市与背景，共同点是稳定的更新节奏与对画面的诚实态度。点击可查看创作者档案。</p>
+        </div>
+      </div>
+      <div class="jp-authors">
+        <article class="jp-author">
+          <div class="jp-author__ava jp-avat--a">光</div>
+          <div>
+            <h3>光野记录 <small>官方签约</small></h3>
+            <div class="jp-author__tags">擅长：城市探索 · 光线研究 · 街拍</div>
+            <p class="jp-author__desc">在镰仓生活七年，习惯在清晨出门，记录街道苏醒的过程。作品强调时间与光的关系，教程类短片以可执行为特点，常附带完整路线与参数表。相信好画面来自重复的等待，而非偶然的运气。</p>
+            <div class="jp-author__nums"><span>作品 <b>86</b></span><span>粉丝 <b>12.4 万</b></span><span>获赞 <b>38.6 万</b></span></div>
+            <button class="jp-author__more" data-author="光野记录|擅长城市探索与光线研究，代表系列《清晨六点的街道光线》《雪后清晨》。连续三年为日本写真官网贡献教程短片，作品以可复现的拍摄流程著称。">查看创作者档案</button>
+          </div>
+        </article>
+        <article class="jp-author">
+          <div class="jp-author__ava jp-avat--c">林</div>
+          <div>
+            <h3>林间绘 <small>认证创作者</small></h3>
+            <div class="jp-author__tags">擅长：人像布光 · 创作幕后 · 器材</div>
+            <p class="jp-author__desc">器材评测出身，后来专注人像布光的教学。坚持“先讲意图再讲参数”，视频里常出现失败版本对照。她认为幕后比成片更有价值，因为改进过程才是创作者真正能带走的东西。</p>
+            <div class="jp-author__nums"><span>作品 <b>64</b></span><span>粉丝 <b>9.8 万</b></span><span>获赞 <b>27.1 万</b></span></div>
+            <button class="jp-author__more" data-author="林间绘|器材评测与人像布光创作者，代表作品《一盏灯也能拍好人像写真》《分镜手稿到开机》。擅长把复杂流程拆成可执行步骤，课程风格克制、强调失败对照。">查看创作者档案</button>
+          </div>
+        </article>
+        <article class="jp-author">
+          <div class="jp-author__ava jp-avat--e">真</div>
+          <div>
+            <h3>真夜书房 <small>官方签约</small></h3>
+            <div class="jp-author__tags">擅长：人物访谈 · 纸媒 · 编辑视角</div>
+            <p class="jp-author__desc">前杂志编辑，现为独立影像制作人。擅长把访谈剪成有呼吸的节奏，保留沉默与犹豫。作品多围绕写真出版的幕后，关注纸面与屏幕之间的取舍，语言平实，极少使用煽情配乐。</p>
+            <div class="jp-author__nums"><span>作品 <b>42</b></span><span>粉丝 <b>7.6 万</b></span><span>获赞 <b>19.4 万</b></span></div>
+            <button class="jp-author__more" data-author="真夜书房|独立影像制作人，专注写真出版与编辑访谈。代表作品《在东京做写真编辑的第七年》《屏幕时代守住纸质质感》。作品风格克制，善用环境声与留白。">查看创作者档案</button>
+          </div>
+        </article>
+        <article class="jp-author">
+          <div class="jp-author__ava jp-avat--d">町</div>
+          <div>
+            <h3>町屋影像 <small>认证创作者</small></h3>
+            <div class="jp-author__tags">擅长：在地文化 · 建筑 · 城市散步</div>
+            <p class="jp-author__desc">团队三人，长期拍摄街区与老建筑。习惯用长镜头与自然声，反对过度调色。作品被多家文化机构引用，也参与本地档案馆的影像整理，强调记录的责任感与长期保存。</p>
+            <div class="jp-author__nums"><span>作品 <b>58</b></span><span>粉丝 <b>8.1 万</b></span><span>获赞 <b>22.8 万</b></span></div>
+            <button class="jp-author__more" data-author="町屋影像|专注在地文化与建筑记录的三人团队，代表作《町屋散步》《木格窗的九个机位》。长期与本地档案馆合作，强调影像记录的责任感与可长期保存的规范。">查看创作者档案</button>
+          </div>
+        </article>
+        <article class="jp-author">
+          <div class="jp-author__ava jp-avat--b">海</div>
+          <div>
+            <h3>海野工作室 <small>官方签约</small></h3>
+            <div class="jp-author__tags">擅长：海岸 · 治愈影像 · 生活方式</div>
+            <p class="jp-author__desc">常驻湘南，拍摄海岸与日常生活。作品里有很多“没有发生什么”的时刻：等人、发呆、看潮。她相信温柔不是风格，而是一种观看立场，因此从不剪掉那些安静的段落。</p>
+            <div class="jp-author__nums"><span>作品 <b>73</b></span><span>粉丝 <b>11.2 万</b></span><span>获赞 <b>34.5 万</b></span></div>
+            <button class="jp-author__more" data-author="海野工作室|常驻湘南的影像工作室，专注海岸与日常记录。代表作《周末写真摊位》《湘南海岸的逆光十分钟》。风格温柔克制，擅用自然声与长镜头。">查看创作者档案</button>
+          </div>
+        </article>
+        <article class="jp-author">
+          <div class="jp-author__ava jp-avat--f">岸</div>
+          <div>
+            <h3>岸线频道 <small>认证创作者</small></h3>
+            <div class="jp-author__tags">擅长：人物访谈 · 音乐现场 · 声音设计</div>
+            <p class="jp-author__desc">声音设计师出身，把听觉当作第二构图。访谈类作品会为每位受访者设计专属环境声，让观众先听见空间，再看见人。坚持不剪掉受访者的迟疑，因为停顿里往往有真话。</p>
+            <div class="jp-author__nums"><span>作品 <b>37</b></span><span>粉丝 <b>6.4 万</b></span><span>获赞 <b>15.9 万</b></span></div>
+            <button class="jp-author__more" data-author="岸线频道|声音设计师与访谈创作者，代表作《海边长大的摄影师》。作品以声音设计见长，常为受访者定制环境声场，强调真实停顿的价值。">查看创作者档案</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S6 评论 M8 -->
+  <section class="jp-section jp-section--alt" id="jp-voices">
+    <div class="jp-wrap">
+      <div class="jp-sec-head">
+        <div class="jp-sec-head__left">
+          <div class="jp-kicker">Voices / 用户口碑</div>
+          <h2>日本写真社区评价：来自观众与创作者的真实反馈</h2>
+          <p>我们保留不同长度与立场的评价，包括批评。口碑不是分数，而是可被检验的具体体验。</p>
+        </div>
+      </div>
+      <div class="jp-comments">
+        <article class="jp-comment">
+          <div class="jp-comment__head"><span class="jp-avat jp-avat--a">周</span><strong>周末拍照的人</strong><span>观众 · 关注 8 个月</span><span class="jp-stars">★★★★★</span></div>
+          <p>最初只是想学构图，结果被《清晨六点的街道光线》里那段没有配乐的空镜打动。后来按视频里的路线走了一遍，才发现原来同一条街在不同时间真的完全不同。这种不夸张的教程，现在很少了。</p>
+          <div class="jp-comment__tags"><span>教程实用</span><span>取景地准确</span></div>
+        </article>
+        <article class="jp-comment jp-comment--quote">
+          <div class="jp-comment__head"><span class="jp-avat jp-avat--c">阿</span><strong>阿绫在拍摄</strong><span>创作者 · 认证用户</span><span class="jp-stars">★★★★★</span></div>
+          <p>作为投稿作者，最直接的感受是审核反馈写得非常具体，会指出第几分钟的色温偏移，而不是一句“未通过”。这让我愿意持续在这里更新，也愿意把新作品首发放在官网。</p>
+          <div class="jp-comment__tags"><span>审核专业</span><span>反馈具体</span></div>
+        </article>
+        <article class="jp-comment">
+          <div class="jp-comment__head"><span class="jp-avat jp-avat--d">木</span><strong>木村家的猫</strong><span>观众 · 关注 1 年</span><span class="jp-stars">★★★★☆</span></div>
+          <p>内容质量稳定，画质确实高清，收藏夹里已经存了二十多条。唯一想提的是部分长访谈没有章节标记，手机上拖动进度条不太方便，希望之后能补上时间轴。</p>
+          <div class="jp-comment__tags"><span>画质好</span><span>建议章节标记</span></div>
+        </article>
+        <article class="jp-comment">
+          <div class="jp-comment__head"><span class="jp-avat jp-avat--b">林</span><strong>林下听风</strong><span>观众 · 关注 5 个月</span><span class="jp-stars">★★★★★</span></div>
+          <p>《周末写真摊位》看到一半就哭了。不是煽情，是那种很安静的温柔。后来我也拿着相机去市集拍了一下午，虽然没拍出什么好照片，但那天的风我记得很清楚。</p>
+          <div class="jp-comment__tags"><span>治愈影像</span><span>真实</span></div>
+        </article>
+        <article class="jp-comment">
+          <div class="jp-comment__head"><span class="jp-avat jp-avat--e">编</span><strong>编辑部小野</strong><span>行业用户 · 关注 2 年</span><span class="jp-stars">★★★★★</span></div>
+          <p>从内容运营角度看，这个官网的更新日志做得比很多大平台都清楚：哪天上线的、谁做的、改了什么版本，一目了然。对需要长期追踪某个创作者的人来说非常友好。</p>
+          <div class="jp-comment__tags"><span>更新透明</span><span>可持续追踪</span></div>
+        </article>
+        <article class="jp-comment">
+          <div class="jp-comment__head"><span class="jp-avat jp-avat--f">学</span><strong>学摄影的第三年</strong><span>观众 · 新用户</span><span class="jp-stars">★★★★☆</span></div>
+          <p>布光那期信息量很大，我来回看了三遍。如果能附一份可下载的参数表会更好，现在只能暂停截图。整体内容是真专业，不是那种念稿子的教学。</p>
+          <div class="jp-comment__tags"><span>信息密度高</span><span>期待资料下载</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S7 辅助区：企业动态 M10 + 合作 M11 -->
+  <section class="jp-section" id="jp-news">
+    <div class="jp-wrap">
+      <div class="jp-sec-head">
+        <div class="jp-sec-head__left">
+          <div class="jp-kicker">News / 企业动态</div>
+          <h2>日本写真官方动态：本月内容更新与合作进展</h2>
+          <p>来自品牌与内容团队的公开记录，包含上线数量、功能变化与合作信息。</p>
+        </div>
+      </div>
+      <div class="jp-grid-3">
+        <article class="jp-news">
+          <time datetime="2026-11-20">2026-11-20</time>
+          <h3>「光与形」冬之写真企划上线</h3>
+          <p>首日发布 18 部原创短片，包含 4 部 4K 正片与 12 篇拍摄攻略，创作者报名同步开放至 12 月 20 日。</p>
+        </article>
+        <article class="jp-news">
+          <time datetime="2026-11-12">2026-11-12</time>
+          <h3>创作者后台新增数据看板</h3>
+          <p>支持查看完播率、收藏趋势与时段分布，帮助创作者判断发布时间与剪辑节奏，已向全部认证创作者开放。</p>
+        </article>
+        <article class="jp-news">
+          <time datetime="2026-11-03">2026-11-03</time>
+          <h3>与三家本地文化机构达成合作</h3>
+          <p>将共同整理街区影像档案，并联合推出在地文化短片系列，首期内容预计于十二月上线。</p>
+        </article>
+      </div>
+      <div style="margin-top:38px">
+        <div class="jp-kicker">Partners / 合作品牌</div>
+        <h2 style="font-size:22px;margin-bottom:18px">日本写真内容生态合作伙伴</h2>
+        <div class="jp-partners">
+          <div class="jp-partner"><b>北岸光学</b><span>器材支持 · 镜头与滤镜</span></div>
+          <div class="jp-partner"><b>纸间印社</b><span>画册印制 · 印前校色</span></div>
+          <div class="jp-partner"><b>慢速咖啡</b><span>线下放映 · 场地合作</span></div>
+          <div class="jp-partner"><b>町屋档案馆</b><span>影像资料 · 联合策展</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S7 FAQ M12 -->
+  <section class="jp-section jp-section--alt" id="jp-faq">
+    <div class="jp-wrap">
+      <div class="jp-sec-head">
+        <div class="jp-sec-head__left">
+          <div class="jp-kicker">FAQ / 帮助中心</div>
+          <h2>日本写真官网常见问题</h2>
+          <p>关于观看、投稿、授权与合作的常见疑问，均给出明确说明。</p>
+        </div>
+      </div>
+      <div class="jp-faq">
+        <details>
+          <summary>平台内容是免费观看的吗？</summary>
+          <p>官网影像库的大部分原创短片可免费高清观看，无需注册。部分特别企划的正片与画册电子版面向注册用户开放，注册不收取费用。</p>
+        </details>
+        <details>
+          <summary>如何向日本写真投稿或报名企划？</summary>
+          <p>点击页面中的“投稿 / 报名”按钮即可进入提交表单，填写作品链接、简介与使用授权说明。审核周期通常为五个工作日，结果会通过站内消息通知。</p>
+        </details>
+        <details>
+          <summary>作品的版权归属如何约定？</summary>
+          <p>创作者保留作品著作权，平台获得在官网及官方账号展示与推荐的授权。任何商业用途将另行签署协议，未经创作者同意不会转授第三方。</p>
+        </details>
+        <details>
+          <summary>为什么强调原创、正版与高清？</summary>
+          <p>原创保证内容的独特性，正版保证传播的合法性，高清保证观看体验的完整性。这三项标准共同构成我们对“精品内容”的定义，也是持续运营的基础。</p>
+        </details>
+        <details>
+          <summary>可以申请线下放映或联合策展吗？</summary>
+          <p>可以。我们与本地文化机构保持合作，接受小型放映、工作坊与联合策展的申请。请在投稿表单中注明活动形式、时间与场地信息。</p>
+        </details>
+        <details>
+          <summary>创作者数据看板包含哪些指标？</summary>
+          <p>目前提供播放量、完播率、收藏趋势、评论情绪分布与时段分布。后续将增加受众地域与设备分布，帮助创作者优化发布策略。</p>
+        </details>
+        <details>
+          <summary>如何反馈问题或举报不当内容？</summary>
+          <p>每条内容下方均提供反馈入口，也可通过页面底部联系邮箱提交。我们承诺在三个工作日内响应，并对涉及版权与不当内容的举报优先处理。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- S8 页脚 -->
+<footer class="jp-foot">
+  <div class="jp-wrap">
+    <div class="jp-foot__grid">
+      <div>
+        <div class="jp-foot__brand">
+          <span class="jp-brand__mark" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e8b04b" stroke-width="1.7" stroke-linecap="round">
+              <circle cx="12" cy="11" r="5.4"/><circle cx="12" cy="11" r="1.8" fill="#e8b04b" stroke="none"/><path d="M7 20h10M9 17.5h6"/>
+            </svg>
+          </span>
+          <strong>日本写真</strong>
+        </div>
+        <p>日本写真官方网站，专注写真影像内容生态与原创精品视频。我们以专业与匠心记录真实、温暖与力量，持续为创作者与企业搭建值得信赖的内容平台。</p>
+      </div>
+      <div>
+        <h4>内容</h4>
+        <ul>
+          <li><a href="#jp-videos">影像库</a></li>
+          <li><a href="#jp-topics">专题企划</a></li>
+          <li><a href="#jp-essay">深度解析</a></li>
+          <li><a href="#jp-authors">创作者矩阵</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>社区</h4>
+        <ul>
+          <li><a href="#jp-voices">用户口碑</a></li>
+          <li><a href="#jp-news">企业动态</a></li>
+          <li><a href="#jp-faq">帮助中心</a></li>
+          <li><a href="#jp-hero" id="jp-foot-submit">投稿与报名</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>联系</h4>
+        <ul>
+          <li>合作邮箱：hello@photography-japan.example</li>
+          <li>工作时间：周一至周五 10:00–18:00</li>
+          <li>编辑部：东京 · 创作支持中心</li>
+        </ul>
+      </div>
+    </div>
+    <div class="jp-foot__bottom">
+      <span>© 2026 日本写真官方网站 · 版权所有 · 持续运营中</span>
+      <span>官方备案号：影字 2026-1108 · 原创内容，正版授权，高清呈现</span>
+    </div>
+  </div>
+</footer>
+
+<button class="jp-top" id="jp-top" aria-label="回到顶部">↑</button>
+<div class="jp-toast" id="jp-toast" role="status" aria-live="polite"></div>
+
+<!-- 弹层：分享 -->
+<div class="jp-modal" id="jp-modal-share" aria-hidden="true">
+  <div class="jp-modal__box" role="dialog" aria-modal="true" aria-labelledby="jp-share-title">
+    <h3 id="jp-share-title">分享这条内容</h3>
+    <p>把日本写真的好内容转给同样喜欢影像的朋友。</p>
+    <div class="jp-share-list">
+      <button data-share-opt="微信">微信</button>
+      <button data-share-opt="微博">微博</button>
+      <button data-share-opt="QQ">QQ</button>
+    </div>
+    <div class="jp-modal__foot">
+      <button class="jp-btn jp-btn--ghost jp-btn--small" data-close-modal>关闭</button>
+    </div>
+  </div>
+</div>
+
+<!-- 弹层：投稿 -->
+<div class="jp-modal" id="jp-modal-submit" aria-hidden="true">
+  <div class="jp-modal__box" role="dialog" aria-modal="true" aria-labelledby="jp-submit-title">
+    <h3 id="jp-submit-title">投稿 / 企划报名</h3>
+    <p>填写基本信息，内容团队将在五个工作日内给出具体反馈。</p>
+    <form id="jp-submit-form">
+      <label for="jp-sub-name">称呼</label>
+      <input id="jp-sub-name" name="name" type="text" placeholder="如何称呼你" required>
+      <label for="jp-sub-link">作品链接</label>
+      <input id="jp-sub-link" name="link" type="url" placeholder="https://…" required>
+      <label for="jp-sub-type">投稿类型</label>
+      <select id="jp-sub-type" name="type">
+        <option>原创短片</option>
+        <option>教程与攻略</option>
+        <option>人物访谈</option>
+        <option>企划报名</option>
+      </select>
+      <label for="jp-sub-desc">作品简介</label>
+      <textarea id="jp-sub-desc" name="desc" placeholder="简单说明拍摄主题与创作背景"></textarea>
+      <div class="jp-modal__foot">
+        <button type="button" class="jp-btn jp-btn--ghost jp-btn--small" data-close-modal>取消</button>
+        <button type="submit" class="jp-btn jp-btn--solid jp-btn--small">提交</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- 弹层：作者档案 -->
+<div class="jp-modal" id="jp-modal-author" aria-hidden="true">
+  <div class="jp-modal__box" role="dialog" aria-modal="true" aria-labelledby="jp-author-title">
+    <h3 id="jp-author-title">创作者档案</h3>
+    <p id="jp-author-body">—</p>
+    <div class="jp-modal__foot">
+      <button class="jp-btn jp-btn--ghost jp-btn--small" data-close-modal>关闭</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var toastEl = document.getElementById('jp-toast');
+  var toastTimer = null;
+  function toast(msg){
+    if(!toastEl) return;
+    toastEl.textContent = msg;
+    toastEl.classList.add('is-show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('is-show'); }, 2200);
+  }
+
+  /* 移动端导航 */
+  var burger = document.getElementById('jp-burger');
+  var nav = document.getElementById('jp-nav');
+  if(burger && nav){
+    burger.addEventListener('click', function(){
+      var open = nav.classList.toggle('is-open');
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      burger.setAttribute('aria-label', open ? '收起导航菜单' : '展开导航菜单');
+    });
+    nav.addEventListener('click', function(e){
+      if(e.target.closest('a')){
+        nav.classList.remove('is-open');
+        burger.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  /* 搜索提示与筛选反馈 */
+  var input = document.getElementById('jp-search-input');
+  var hint = document.getElementById('jp-search-hint');
+  var pool = [
+    {t:'清晨六点的街道光线', c:'城市探索'},
+    {t:'访谈：写真编辑的第七年', c:'人物访谈'},
+    {t:'町屋散步', c:'在地文化'},
+    {t:'一盏灯也能拍好人像写真', c:'教程'},
+    {t:'湘南海岸的逆光十分钟', c:'治愈影像'},
+    {t:'周末写真摊位', c:'生活方式'},
+    {t:'「光与形」冬之写真', c:'专题'},
+    {t:'胶片扫描参数对照', c:'实用技巧'}
+  ];
+  function renderHint(kw){
+    if(!hint) return;
+    var list = pool.filter(function(x){ return !kw || x.t.indexOf(kw) > -1 || x.c.indexOf(kw) > -1; }).slice(0,5);
+    if(!list.length){ hint.innerHTML = ''; hint.classList.remove('is-open'); return; }
+    hint.innerHTML = list.map(function(x){
+      return '<li><a href="#jp-videos">' + x.t + ' <small>· ' + x.c + '</small></a></li>';
+    }).join('');
+    hint.classList.add('is-open');
+  }
+  if(input && hint){
+    input.addEventListener('input', function(){ renderHint(input.value.trim()); });
+    input.addEventListener('focus', function(){ if(input.value.trim()) renderHint(input.value.trim()); });
+    input.addEventListener('keydown', function(e){
+      if(e.key === 'Enter'){
+        e.preventDefault();
+        var kw = input.value.trim();
+        if(kw){ toast('正在检索「' + kw + '」相关内容'); hint.classList.remove('is-open'); }
+        else { toast('请输入关键词后再搜索'); }
+      }
+      if(e.key === 'Escape'){ hint.classList.remove('is-open'); }
+    });
+    document.addEventListener('click', function(e){
+      if(!e.target.closest('.jp-search')) hint.classList.remove('is-open');
+    });
+  }
+
+  /* 点赞 / 收藏 */
+  document.addEventListener('click', function(e){
+    var like = e.target.closest('[data-like]');
+    if(like){
+      var num = like.querySelector('[data-num]');
+      var n = num ? parseInt(num.textContent.replace(/[^\d]/g,''),10) || 0 : 0;
+      var on = like.classList.toggle('is-on');
+      like.textContent = '';
+      like.appendChild(document.createTextNode(on ? '♥ 已点赞 ' : '♡ ' + like.getAttribute('data-off') + ' '));
+      var b = document.createElement('b');
+      b.setAttribute('data-num','');
+      b.textContent = on ? String(n + 1) : String(Math.max(0, n - 1));
+      like.appendChild(b);
+      toast(on ? '已点赞，感谢支持' : '已取消点赞');
+      return;
+    }
+    var fav = e.target.closest('[data-fav]');
+    if(fav){
+      var onF = fav.classList.toggle('is-fav');
+      fav.textContent = onF ? '★ 已收藏' : '☆ 收藏';
+      toast(onF ? '已加入收藏夹' : '已取消收藏');
+      return;
+    }
+    var cp = e.target.closest('[data-copy]');
+    if(cp){
+      var link = 'https://photography-japan.example/video/' + Math.random().toString(36).slice(2,8);
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(link).then(function(){ toast('链接已复制，可分享给朋友'); }, function(){ toast('复制失败，请手动选择链接'); });
+      } else {
+        toast('链接已生成：' + link);
+      }
+      return;
+    }
+    var sh = e.target.closest('[data-share]');
+    if(sh){ openModal('jp-modal-share'); return; }
+    var shareOpt = e.target.closest('[data-share-opt]');
+    if(shareOpt){
+      toast('已生成' + shareOpt.getAttribute('data-share-opt') + '分享卡片');
+      closeModal(document.getElementById('jp-modal-share'));
+      return;
+    }
+  });
+
+  /* 标签筛选 */
+  var filters = document.getElementById('jp-filters');
+  var grid = document.getElementById('jp-video-grid');
+  if(filters && grid){
+    filters.addEventListener('click', function(e){
+      var btn = e.target.closest('.jp-filter');
+      if(!btn) return;
+      filters.querySelectorAll('.jp-filter').forEach(function(b){ b.classList.remove('is-active'); });
+      btn.classList.add('is-active');
+      var key = btn.getAttribute('data-filter');
+      var cards = grid.querySelectorAll('.jp-vcard');
+      var shown = 0;
+      cards.forEach(function(card){
+        var cats = card.getAttribute('data-cat') || '';
+        var match = key === 'all' || cats.indexOf(key) > -1;
+        card.style.display = match ? '' : 'none';
+        if(match) shown++;
+      });
+      toast(key === 'all' ? '已显示全部 ' + shown + ' 条影像' : '筛选「' + key + '」共 ' + shown + ' 条');
+    });
+  }
+
+  /* 弹层控制 */
+  var lastFocus = null;
+  function openModal(id){
+    var m = document.getElementById(id);
+    if(!m) return;
+    lastFocus = document.activeElement;
+    m.classList.add('is-open');
+    m.setAttribute('aria-hidden','false');
+    document.body.style.overflow = 'hidden';
+    var focusable = m.querySelector('button, input, textarea, select');
+    if(focusable) focusable.focus();
+  }
+  function closeModal(m){
+    if(!m) return;
+    m.classList.remove('is-open');
+    m.setAttribute('aria-hidden','true');
+    document.body.style.overflow = '';
+    if(lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+  document.addEventListener('click', function(e){
+    if(e.target.closest('[data-close-modal]')){ closeModal(e.target.closest('.jp-modal')); return; }
+    if(e.target.classList && e.target.classList.contains('jp-modal')){ closeModal(e.target); }
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){ document.querySelectorAll('.jp-modal.is-open').forEach(closeModal); }
+  });
+
+  /* 投稿入口 */
+  var openSubmit = document.getElementById('jp-open-submit');
+  if(openSubmit){ openSubmit.addEventListener('click', function(){ openModal('jp-modal-submit'); }); }
+  var footSubmit = document.getElementById('jp-foot-submit');
+  if(footSubmit){ footSubmit.addEventListener('click', function(e){ e.preventDefault(); openModal('jp-modal-submit'); }); }
+  var submitForm = document.getElementById('jp-submit-form');
+  if(submitForm){
+    submitForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      var name = document.getElementById('jp-sub-name').value.trim();
+      closeModal(document.getElementById('jp-modal-submit'));
+      toast(name ? ('已收到 ' + name + ' 的投稿，五个工作日内反馈') : '已收到投稿，我们将尽快联系');
+      submitForm.reset();
+    });
+  }
+
+  /* 作者档案 */
+  document.addEventListener('click', function(e){
+    var a = e.target.closest('[data-author]');
+    if(!a) return;
+    var parts = a.getAttribute('data-author').split('|');
+    document.getElementById('jp-author-title').textContent = parts[0] + ' · 创作者档案';
+    document.getElementById('jp-author-body').textContent = parts[1] || '';
+    openModal('jp-modal-author');
+  });
+
+  /* 回到顶部 */
+  var topBtn = document.getElementById('jp-top');
+  if(topBtn){
+    window.addEventListener('scroll', function(){
+      if(window.scrollY > 420) topBtn.classList.add('is-show');
+      else topBtn.classList.remove('is-show');
+    }, {passive:true});
+    topBtn.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
+  }
+
+  /* 数字滚动 */
+  function runCount(){
+    document.querySelectorAll('[data-count]').forEach(function(el){
+      var target = parseInt(el.getAttribute('data-count'),10) || 0;
+      var start = 0, dur = 1200, t0 = null;
+      function step(ts){
+        if(!t0) t0 = ts;
+        var p = Math.min((ts - t0) / dur, 1);
+        var eased = 1 - Math.pow(1 - p, 3);
+        el.textContent = Math.round(start + (target - start) * eased).toLocaleString('en-US');
+        if(p < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    });
+  }
+  var metrics = document.querySelector('.jp-metrics');
+  if(metrics && 'IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){ runCount(); io.disconnect(); }
+      });
+    }, {threshold:.35});
+    io.observe(metrics);
+  } else {
+    runCount();
+  }
+
+  /* 导航锚点偏移（吸顶高度补偿） */
+  var sticky = document.querySelector('.jp-sticky');
+  function offsetTop(){
+    return sticky ? sticky.getBoundingClientRect().height + 12 : 12;
+  }
+  document.addEventListener('click', function(e){
+    var link = e.target.closest('a[href^="#"]');
+    if(!link) return;
+    var id = link.getAttribute('href');
+    if(!id || id === '#') return;
+    var target = document.querySelector(id);
+    if(!target) return;
+    e.preventDefault();
+    var y = target.getBoundingClientRect().top + window.scrollY - offsetTop();
+    window.scrollTo({top: Math.max(y, 0), behavior:'smooth'});
+    history.replaceState(null, '', id);
+  });
+})();
+</script>
+</body>
+          </html>
